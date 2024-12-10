@@ -1,0 +1,39 @@
+{
+    "section": {
+      "name": "menu",
+      "title": "Nuestras Especialidades",
+      "cards": [
+        {
+          "image": "./img/alex-lvrs-Uw0umuQnkpk-unsplash.jpg",
+          "alt": "Imagen de ejemplo 1",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+          "image": "./img/christine-isakzhanova-H7LLZ8hxvdQ-unsplash.jpg",
+          "alt": "Imagen de ejemplo 2",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+          "image": "./img/duong-ngan-SofOy-2jRS8-unsplash.jpg",
+          "alt": "Imagen de ejemplo 3",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+          "image": "./img/olga-guryanova-Rfh_qZ9-1IE-unsplash.jpg",
+          "alt": "Imagen de ejemplo 4",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+          "image": "./img/kirsten-drew-n49BjsFf5dI-unsplash.jpg",
+          "alt": "Imagen de ejemplo 5",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+          "image": "./img/taan-huyn-4jkngTJchak-unsplash.jpg",
+          "alt": "Imagen de ejemplo 6",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        }
+      ]
+    }
+  }
+  

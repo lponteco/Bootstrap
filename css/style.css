@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Cinzel", serif !important;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.nav-link {
+    color: #555;
+    font-size: 1rem !important;
+}
+
+.nav-link:hover {
+    color: #6A4E23;
+}
+
+.navbar-toggler-icon {
+    background-color: #333;
+}
+
+#dark-mode-toggle {
+    font-size: 18px; 
+    color: #333; 
+    text-decoration: none; 
+    margin-left: 10px; 
+}
+
+#dark-mode-toggle:hover {
+    color: #6A4E23; 
+}
+
+.carousel-small .carousel-inner {
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+.carousel-small .carousel-item img {
+    height: auto;
+    max-height: 500px;
+    object-fit: cover; 
+}
+
+.text-center {
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.card-img-top {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.container .row {
+    margin-bottom: 30px; 
+}
+
+.btn-enviar {
+    background-color: #6A4E23 !important; 
+    color: white !important; 
+    border: none; 
+    font-weight: bold; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.btn-enviar:hover {
+    background-color: #4E3629 !important;
+    color: white !important; 
+    cursor: pointer !important; 
+}
+
+.error1 {
+    color: #E00F00;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    color: #333;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    margin-top: auto; 
+}
+
+footer p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+
+@media (max-width: 576px) {
+    .card {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .card {
+        width: 80% !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .card {
+        width: 18rem;
+    }
+}  
