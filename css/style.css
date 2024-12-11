@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     display: flex;
@@ -17,48 +18,49 @@ main {
 }
 
 .navbar {
-    background-color: #f8f9fa;
-    border-bottom: 2px solid #ddd;
+    background-color: #6A4E23 !important;
+    color: white !important;
+    font-family: "Cinzel", serif !important;
 }
 
 .navbar-brand {
     font-size: 1.5rem;
-    color: black;
+    color: white !important;
 }
 
 .nav-link {
-    color: #555;
+    color: white;
     font-size: 1rem !important;
 }
 
 .nav-link:hover {
-    color: #6A4E23;
+    color: #DEDEDE;
 }
 
-.navbar-toggler-icon {
-    background-color: #333;
+.navbar-toggler:focus {
+    box-shadow: none !important;
 }
 
 #dark-mode-toggle {
-    font-size: 18px; 
-    color: #333; 
-    text-decoration: none; 
-    margin-left: 10px; 
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
 }
 
 #dark-mode-toggle:hover {
-    color: #6A4E23; 
+    color: #DEDEDE;
 }
 
 .carousel-small .carousel-inner {
-    max-width: 100%; 
-    margin: 0 auto; 
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .carousel-small .carousel-item img {
     height: auto;
     max-height: 500px;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .text-center {
@@ -67,7 +69,7 @@ main {
 
 h3 {
     font-size: 2rem;
-    color: #333;
+    color: #6A4E23;
     font-weight: 600;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -79,6 +81,7 @@ h3 {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -108,22 +111,22 @@ h3 {
 }
 
 .container .row {
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 
 .btn-enviar {
-    background-color: #6A4E23 !important; 
-    color: white !important; 
-    border: none; 
-    font-weight: bold; 
-    padding: 10px; 
-    border-radius: 5px; 
+    background-color: #6A4E23 !important;
+    color: white !important;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .btn-enviar:hover {
     background-color: #4E3629 !important;
-    color: white !important; 
-    cursor: pointer !important; 
+    color: white !important;
+    cursor: pointer !important;
 }
 
 .error1 {
@@ -131,23 +134,173 @@ h3 {
     font-size: 0.9rem;
 }
 
+.login-link {
+    color: black;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    color: #6A4E23;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 2px solid #4E3629 !important;
+}
+
+textarea.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 2px solid #4E3629 !important;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #4E3629;
+    background-color: #f1f1f1;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #6A4E23;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '';
+    background-color: white;
+}
+
+input[type="checkbox"]:not(:checked)::before {
+    content: '';
+    background-color: transparent;
+}
+
 footer {
-    background-color: #f8f9fa;
-    padding: 10px;
-    color: #333;
+    background-color: #6A4E23 !important;
     width: 100%;
     text-align: center;
     position: relative;
     bottom: 0;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 footer p {
     font-size: 1rem;
-    color: #555;
+    color: white !important;
     margin: 0;
 }
 
+/*--------------- DARKMODE-----------------  */
+body.dark-mode {
+    background-color: #121212;  
+    color: #e0e0e0;           
+}
+
+body.dark-mode .navbar {
+    background-color: #333 !important;    
+    color: #e0e0e0 !important;          
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link {
+    color: #e0e0e0 !important; 
+}
+
+body.dark-mode .nav-link:hover {
+    color: #DEDEDE;    
+}
+
+body.dark-mode .carousel-small .carousel-item img {
+    object-fit: cover;   
+}
+
+body.dark-mode h3 {
+    color: #e0e0e0;    
+}
+
+body.dark-mode .card {
+    background-color: #1f1f1f; 
+    border: 1px solid #444; 
+    color: #e0e0e0;             
+}
+
+body.dark-mode .card-title,
+body.dark-mode .card-text {
+    color: #e0e0e0;          
+}
+
+body.dark-mode label {
+    color: #121212;  
+}
+
+body.dark-mode .btn-enviar {
+    background-color: #1f1f1f !important; 
+    color: white !important;
+}
+
+body.dark-mode .btn-enviar:hover {
+    background-color: #444 !important;
+    color: white !important;
+}
+
+body.dark-mode .error1 {
+    color: #D40B00; 
+}
+
+body.dark-mode .login-link {
+    color: #121212; 
+}
+
+body.dark-mode .login-link:hover {
+    color: #444;
+}
+
+body.dark-mode .registro-link {
+    color: #121212;
+}
+
+body.dark-mode .custom-heading {
+    color: #121212 !important; 
+}
+
+body.dark-mode input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+}
+
+body.dark-mode input[type="checkbox"]:checked {
+    background-color: #444;
+}
+
+body.dark-mode input[type="checkbox"]:checked::before {
+    content: '';
+    background-color: white !important; 
+}
+
+body.dark-mode input[type="checkbox"]:not(:checked)::before {
+    content: '';
+    position: absolute;
+    background-color: transparent; 
+    border: 2px solid #444; 
+}
+
+body.dark-mode input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 2px solid #4E3629 !important;
+}
+
+body.dark-mode footer {
+    background-color: #333 !important;
+}
+
+body.dark-mode footer p {
+    color: white !important;
+}
 
 @media (max-width: 576px) {
     .card {
@@ -165,4 +318,4 @@ footer p {
     .card {
         width: 18rem;
     }
-}  
+}

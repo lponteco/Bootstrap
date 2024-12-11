@@ -10,7 +10,7 @@ document.getElementById("header").innerHTML = `
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav d-flex align-items-center"> 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              <a class="nav-link" href="/index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#menu">Productos</a>
@@ -37,7 +37,7 @@ document.getElementById("header").innerHTML = `
 
 document.getElementById("footer").innerHTML = `
   <footer>
-    <div class="container-fluid bg-light text-dark text-center p-3">
+    <div class="container-fluid text-dark text-center p-3">
       <p>© 2024 by Lu</p>
     </div>
   </footer>  

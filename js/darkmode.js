@@ -1,6 +1,6 @@
 function toggleDarkMode() {
     const body = document.body;
-    body.classList.toggle('dark-mode');
+    body.classList.toggle('dark-mode'); // Alterna la clase 'dark-mode' en el body
 
     // Guardamos la preferencia del usuario en localStorage
     const isDarkMode = body.classList.contains('dark-mode');
@@ -17,4 +17,5 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Asignar el evento de clic al botón de cambiar modo
 document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
